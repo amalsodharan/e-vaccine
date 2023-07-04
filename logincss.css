@@ -1,0 +1,91 @@
+html,body{
+    margin: 0;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+header{
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+a{
+  text-decoration: none;
+  color: black;
+  padding: 17px 10px;
+}
+a:hover{
+    color:white;
+}
+form a{
+  text-decoration: none;
+  color: white;
+  padding-right: 5px;
+}
+form a:hover{
+    color: blue;
+}
+#but{
+    padding-top: 15px;
+    padding-left: 80px;
+}
+.bar2{
+    padding: 8px 10px;
+    border-radius: 8px;
+    border-style: none;
+}
+.last{
+    background: url('vector.jpg'),no-repeat 50% 50%;
+    background-size: cover;
+    height: 800px;
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
